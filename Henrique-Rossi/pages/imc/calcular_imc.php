@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        button{
+        button {
             width: 150px;
             height: 35px;
             border-radius: 30px;
@@ -15,23 +15,23 @@
             border: 2px solid blue;
         }
 
-        button:hover{
+        button:hover {
             border: 2px solid cyan;
             cursor: pointer;
         }
 
-        button a{
+        button a {
             text-decoration: none;
             color: blue;
             font-size: 16px;
             transition: all 0.5s;
         }
 
-        button a:hover{
+        button a:hover {
             color: cyan;
         }
 
-        p{
+        p {
             width: auto;
             display: flex;
             justify-content: center;
@@ -40,11 +40,11 @@
             font-weight: 700;
         }
 
-        .bad_result{
+        .bad_result {
             color: red;
         }
 
-        .success_result{
+        .success_result {
             color: green;
         }
     </style>
