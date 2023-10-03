@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+    $peso = filter_var($_POST['peso'], FILTER_SANITIZE_NUMBER_INT);
+    $altura = filter_var($_POST['altura'], FILTER_SANITIZE_NUMBER_INT);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <?php
-
-    if (isset($_POST['peso']) && isset($_POST['altura'])) {
-        $peso = filter_input(INPUT_POST, 'peso', FILTER_VALIDATE_FLOAT);
-        $altura = filter_input(INPUT_POST, 'altura', FILTER_VALIDATE_FLOAT);
-        $altura = $altura / 100;
-
-        $imc = number_format($peso / ($altura * $altura), 2);
-
-        echo "<h2>Seu IMC é: $imc</h2>";
-    } else {
-        echo "<h1>Por favor, preencha os campos</h1>";
+    if (!$peso || !$altura) {
+        echo "<h2>Por favor, preencha os campos de peso e altura para calcular seu IMC</h2>";
+        exit;
     }
 
-    ?>
-</body>
+    $altura = $altura / 100;
+    $imc = $peso / ($altura * $altura);
 
-</html>
+    echo "<h2>Seu IMC é: " . number_format($imc, 2) . "<h2>";
+
+    if ($imc < 18.5) {
+        echo "<h3>Você está abaixo do peso</h3>";
+    } elseif ($imc >= 18.5 && $imc <= 24.9) {
+        echo "<h3>Você está com o peso normal</h3>";
+    } elseif ($imc >= 25 && $imc <= 29.9) {
+        echo "<h3>Você está com sobrepeso</h3>";
+    } elseif ($imc >= 30 && $imc <= 34.9) {
+        echo "<h3>Você está com obesidade grau 1</h3>";
+    } elseif ($imc >= 35 && $imc <= 39.9) {
+        echo "<h3>Você está com obesidade grau 2</h3>";
+    } elseif ($imc >= 40) {
+        echo "<h3>Você está com obesidade grau 3</h3>";
+    }
