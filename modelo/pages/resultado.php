@@ -22,31 +22,26 @@
   switch ($operacao) {
     case 'soma':
       $resultado = $valor1 + $valor2;
+      $sinal = "+";
       break;
     case 'subtracao':
       $resultado = $valor1 - $valor2;
+      $sinal = "-";
       break;
     case 'multiplicacao':
       $resultado = $valor1 * $valor2;
+      $sinal = "*";
       break;
     case 'divisao':
       if ($valor2 != 0) {
         $resultado = $valor1 / $valor2;
+        $sinal = "/";
       } else {
         echo "Erro: Divisão por zero!";
       }
       break;
     default:
       echo "Operação inválida!";
-  }
-  if($operacao === "soma") {
-    $sinal = "+";
-  }else if($operacao === "subtração"){
-    $sinal = "-";
-  }else if($operacao === "multiplicacao"){
-    $sinal = "*";
-  }else {
-    $sinal = "/";
   }
   echo "Expressão: $valor1 $sinal $valor2 = $resultado";
  
