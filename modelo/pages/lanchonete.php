@@ -26,11 +26,11 @@
   <form action="calcular_preco.php" method="POST">
     <p>Por favor, digite o código e a qantidade do produto desejado.</p>
     <label for="codigo">Código</label>
-    <input type="number" name="codigo" id="codigo">
+    <input type="number" name="codigo" id="codigo" value="<?php echo filter_input(INPUT_POST, 'codigo', FILTER_VALIDATE_INT); ?>">
     <br>
     <br>
     <label for="quantidade">Quantidade</label>
-    <input type="number" name="quantidade" id="quantidade">
+    <input type="number" name="quantidade" id="quantidade" value="<?php echo filter_input(INPUT_POST, 'quantidade', FILTER_VALIDATE_INT); ?>">
     <br>
     <br>
     <button type="submit">Finalizar pedido</button>
