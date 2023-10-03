@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <style>
-    .container {
-        margin: 0 auto;
-        width: 50%;
-        height: 100vh;
+        .container {
+            margin: 0 auto;
+            width: 50%;
+            height: 90vh;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
 
