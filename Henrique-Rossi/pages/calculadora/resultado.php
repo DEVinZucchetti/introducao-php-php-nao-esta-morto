@@ -45,7 +45,7 @@
 
 
         if (!$numero) {
-            echo "Informe um número válido";
+            echo "<p class='error-message'>Informe um número válido</p>";
         } else {
             gerar_Tabuada('+', $numero);
             gerar_Tabuada('-',  $numero);
@@ -68,7 +68,7 @@
                     $resultado = $numero /  $contador;
                 }
 
-                echo "$numero $operador $contador = $resultado" . "<br />";
+                echo "<p class='result'>$numero $operador $contador = $resultado</p> <br/>";
             }
         }
         ?>
