@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  :root {
+    font-family: sans-serif;
+  }
+</style>
 <body>
   <h1>Calculadora</h1>
   <form action="resultado.php" method="POST">
