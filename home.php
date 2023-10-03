@@ -54,7 +54,7 @@
     <div class="chat">
 
         <div class="message sent">
-            <p><span class="author">Nome do aluno</span>: Olá,  professor!  <a href="./modelo/"> Clique aqui a minha solução.</a>.</p>
+            <p><span class="author">Henrique</span>: Olá,  professor!  <a href="./Henrique-Rossi"> Clique aqui a minha solução.</a>.</p>
            
         </div>
         <!-- Adicione mais mensagens aqui -->

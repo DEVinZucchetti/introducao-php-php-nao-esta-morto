@@ -12,19 +12,19 @@
     <section class="algoritmos-lista">
         
         <div class="algoritmo-item">
-            <h2><a href="pages/imc.php">IMC</a></h2>
+            <h2><a href="./pages/imc/imc.php">IMC</a></h2>
         </div>
 
         <div class="algoritmo-item">
-            <h2><a href="pages/media.php">Média</a></h2>
+            <h2><a href="./pages/media/media.php">Média</a></h2>
         </div>
 
         <div class="algoritmo-item">
-            <h2><a href="pages/calculadora.php">Calculadora</a></h2>
+            <h2><a href="./pages/calculadora/calculadora.php">Calculadora</a></h2>
         </div>
 
         <div class="algoritmo-item">
-            <h2><a href="pages/lanchonete.php">Lanchonete</a></h2>
+            <h2><a href="./pages/lanchonete/lanchonete.php">Lanchonete</a></h2>
         </div>
 
     </section>
