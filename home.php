@@ -5,45 +5,45 @@
     <meta charset="UTF-8">
     <title>WhatsApp Web Clone</title>
     <style>
-        /* Estilos de exemplo */
-        body {
-            font-family: Arial, sans-serif;
-        }
+    /* Estilos de exemplo */
+    body {
+        font-family: Arial, sans-serif;
+    }
 
-        .header {
-            background-color: #075e54;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+    .header {
+        background-color: #075e54;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
 
-        .chat {
-            width: 70%;
-            margin: 0 auto;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
+    .chat {
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
 
-        .message {
-            background-color: #f1f0f0;
-            border-radius: 5px;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
+    .message {
+        background-color: #f1f0f0;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
 
-        .message.sent {
-            background-color: #dcf8c6;
+    .message.sent {
+        background-color: #dcf8c6;
 
-        }
+    }
 
-        .author {
-            font-weight: bold;
-        }
+    .author {
+        font-weight: bold;
+    }
 
-        .link {
-            text-decoration: underline;
+    .link {
+        text-decoration: underline;
 
-        }
+    }
     </style>
 </head>
 
@@ -54,8 +54,9 @@
     <div class="chat">
 
         <div class="message sent">
-            <p><span class="author">Nome do aluno</span>: Olá,  professor!  <a href="./modelo/"> Clique aqui a minha solução.</a>.</p>
-           
+            <p><span class="author">Caroline Sampaio</span>: Olá, professor! <a href="./Caroline Sampaio/"> Clique aqui
+                    a minha solução.</a>.</p>
+
         </div>
         <!-- Adicione mais mensagens aqui -->
     </div>
