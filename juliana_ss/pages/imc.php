@@ -1,3 +1,10 @@
+<?php
+if(isset($_GET['error'])) {
+    echo  "<script>alert('Digite um dado válido!');</script>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,7 +14,7 @@
 </head>
 <body>
 <p>Para calcular o IMC informe: </p>
-    <form method="post" action="resultado.php">
+    <form method="post" action="calcular_imc.php">
     <label>Peso::</label>
         <input type="number" placeholder="Digite o peso" name="peso" />
         <br />
