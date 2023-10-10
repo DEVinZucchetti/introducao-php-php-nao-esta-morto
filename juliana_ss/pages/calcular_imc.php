@@ -7,7 +7,7 @@ $altura = $altura / 100;
 $resultado = $peso / ($altura * $altura);
 
 if (!$peso || !$altura) {
-    header('Location: res$resultado.php?error=true');
+    header('Location: imc.php?error=true');
   }elseif ($resultado < 18.5){
     echo "Você está abaixo do peso";
 } elseif ($resultado >= 18.5 && $resultado <= 24.9) {
