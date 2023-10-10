@@ -3,9 +3,9 @@
 $produto = filter_input(INPUT_POST, 'produto', FILTER_SANITIZE_NUMBER_INT);
 $quantidade = filter_input(INPUT_POST, 'quantidade', FILTER_SANITIZE_NUMBER_INT);
 
-/*if (!$codigo || !$quantidade) {
+if (!$produto || !$quantidade) {
     header('Location: lanchonete.php?error=true');
-  }*/
+  }
 
   switch ($produto) {
     case 100:{
